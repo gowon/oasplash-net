@@ -1,0 +1,9 @@
+{
+  "commands": {
+    "generate-autorest-clients": {
+      "fileName": "pwsh.exe",
+      "workingDirectory": ".",
+      "arguments": "-ExecutionPolicy Bypass -NonInteractive -NoLogo -NoProfile -Command \"./generate-autorest-clients.ps1 -Force\""
+    }
+  }
+}
