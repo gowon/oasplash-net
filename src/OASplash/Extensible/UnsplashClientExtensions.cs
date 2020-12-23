@@ -46,10 +46,10 @@ namespace OASplash.Client
         /// </param>
         public static Photo GetSingleRandomPhoto(this IUnsplashClient operations, string collections = default,
             bool? featured = default, string username = default, string query = default,
-            Orientation? orientation = default, ContentFilter? contentFilter = default, int? count = default)
+            Orientation? orientation = default, ContentFilter? contentFilter = default)
         {
             return operations
-                .GetSingleRandomPhotoAsync(collections, featured, username, query, orientation, contentFilter, count)
+                .GetSingleRandomPhotoAsync(collections, featured, username, query, orientation, contentFilter)
                 .GetAwaiter().GetResult();
         }
 
@@ -95,12 +95,12 @@ namespace OASplash.Client
         /// </param>
         public static async Task<Photo> GetSingleRandomPhotoAsync(this IUnsplashClient operations,
             string collections = default, bool? featured = default, string username = default, string query = default,
-            Orientation? orientation = default, ContentFilter? contentFilter = default, int? count = default,
+            Orientation? orientation = default, ContentFilter? contentFilter = default,
             CancellationToken cancellationToken = default)
         {
             using (var _result = await operations.GetSingleRandomPhotoWithHttpMessagesAsync(collections, featured,
                 username,
-                query, orientation, contentFilter, count, null, cancellationToken).ConfigureAwait(false))
+                query, orientation, contentFilter, null, cancellationToken).ConfigureAwait(false))
             {
                 return _result.Body;
             }

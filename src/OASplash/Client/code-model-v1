@@ -276,12 +276,11 @@
      "modelType": {
       "$id": "45",
       "$type": "PrimaryType",
-      "format": "double",
-      "knownPrimaryType": "double",
+      "knownPrimaryType": "string",
       "name": {
        "$id": "46",
        "fixed": false,
-       "raw": "Double"
+       "raw": "String"
       },
       "deprecated": false
      }
@@ -350,11 +349,12 @@
      "modelType": {
       "$id": "57",
       "$type": "PrimaryType",
-      "knownPrimaryType": "int",
+      "format": "double",
+      "knownPrimaryType": "double",
       "name": {
        "$id": "58",
        "fixed": false,
-       "raw": "Int"
+       "raw": "Double"
       },
       "deprecated": false
      }

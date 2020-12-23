@@ -28,9 +28,6 @@ csharp:
 Installing AutoRest on Windows, MacOS or Linux involves two steps:
 
 1. __Install [Node.js](https://nodejs.org/en/)__ (LTS HIGHLY RECOMENDED)
-
-> for more help, check out [Installing Node.JS on different platforms](./docs/developer/workstation.md#nodejs)
-
 2. __Install AutoRest__ using `npm`
 
 ```powershell

@@ -11,7 +11,7 @@ namespace OASplash.Client
     {
         Task<HttpOperationResponse<Photo>> GetSingleRandomPhotoWithHttpMessagesAsync(
             string collections = default, bool? featured = default, string username = default, string query = default,
-            Orientation? orientation = default, ContentFilter? contentFilter = default, int? count = default,
+            Orientation? orientation = default, ContentFilter? contentFilter = default,
             Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default);
 
         Task<HttpOperationResponse<IList<Photo>>> GetRandomPhotosWithHttpMessagesAsync(

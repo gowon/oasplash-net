@@ -63,7 +63,7 @@ namespace OASplash.Client
         /// </return>
         public async Task<HttpOperationResponse<Photo>> GetSingleRandomPhotoWithHttpMessagesAsync(
             string collections = default, bool? featured = default, string username = default, string query = default,
-            Orientation? orientation = default, ContentFilter? contentFilter = default, int? count = default,
+            Orientation? orientation = default, ContentFilter? contentFilter = default,
             Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default)
         {
             // Tracing
@@ -79,7 +79,6 @@ namespace OASplash.Client
                 tracingParameters.Add("query", query);
                 tracingParameters.Add("orientation", orientation);
                 tracingParameters.Add("contentFilter", contentFilter);
-                tracingParameters.Add("count", count);
                 tracingParameters.Add("cancellationToken", cancellationToken);
                 ServiceClientTracing.Enter(_invocationId, this, "GetRandomPhoto", tracingParameters);
             }
@@ -103,9 +102,6 @@ namespace OASplash.Client
                 _queryParameters.Add(string.Format("content_filter={0}",
                     Uri.EscapeDataString(
                         SafeJsonConvert.SerializeObject(contentFilter, SerializationSettings).Trim('"'))));
-            if (count != null)
-                _queryParameters.Add(string.Format("count={0}",
-                    Uri.EscapeDataString(SafeJsonConvert.SerializeObject(count, SerializationSettings).Trim('"'))));
             if (_queryParameters.Count > 0) _url += "?" + string.Join("&", _queryParameters);
             // Create HTTP transport objects
             var _httpRequest = new HttpRequestMessage();
@@ -232,6 +228,8 @@ namespace OASplash.Client
             Orientation? orientation = default, ContentFilter? contentFilter = default, int? count = default,
             Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default)
         {
+            count ??= 1;
+            
             // Tracing
             var _shouldTrace = ServiceClientTracing.IsEnabled;
             string _invocationId = null;

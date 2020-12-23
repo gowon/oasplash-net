@@ -22,7 +22,7 @@ namespace OASplash.Client.Models
         /// <summary>
         /// Initializes a new instance of the Exif class.
         /// </summary>
-        public Exif(string make = default(string), string model = default(string), double? exposureTime = default(double?), double? aperture = default(double?), int? focalLength = default(int?), int? iso = default(int?))
+        public Exif(string make = default(string), string model = default(string), string exposureTime = default(string), double? aperture = default(double?), double? focalLength = default(double?), int? iso = default(int?))
         {
             Make = make;
             Model = model;
@@ -51,7 +51,7 @@ namespace OASplash.Client.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "exposure_time")]
-        public double? ExposureTime { get; set; }
+        public string ExposureTime { get; set; }
 
         /// <summary>
         /// </summary>
@@ -61,7 +61,7 @@ namespace OASplash.Client.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "focal_length")]
-        public int? FocalLength { get; set; }
+        public double? FocalLength { get; set; }
 
         /// <summary>
         /// </summary>
