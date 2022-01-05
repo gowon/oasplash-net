@@ -1,0 +1,8 @@
+# Config Options for aspnetcore
+# ref: https://openapi-generator.tech/docs/generators/aspnetcore
+
+invokerPackage: OASPlash.Core
+packageName: OASPlash.Core
+library: httpclient
+# disallowAdditionalPropertiesIfNotPresent: false
+returnICollection: true

@@ -1,0 +1,9 @@
+{
+  "commands": {
+    "generate-server": {
+      "fileName": "pwsh.exe",
+      "workingDirectory": ".",
+      "arguments": "-ExecutionPolicy Bypass -NonInteractive -NoLogo -NoProfile -Command \"./generate-server.ps1\""
+    }
+  }
+}

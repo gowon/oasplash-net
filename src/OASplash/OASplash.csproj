@@ -28,7 +28,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\spec\unsplash.yml" Link="unsplash.yml" />
+    <None Include="..\..\spec\unsplash.yaml" Link="unsplash.yaml" />
   </ItemGroup>
 
   <ItemGroup Label="SourceLink">

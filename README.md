@@ -15,14 +15,14 @@ If you want to get your personal API key from Unsplash:
 4. Go to _['Your applications'](https://unsplash.com/oauth/applications)_
 5. Click on _'New Application'_ to create a new one and get an API key (and a Secret).
 
-## Dependencies
-
-- [System.Net.Http](https://preview.nuget.org/packages/System.Net.Http/)
-- [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json)
-
-## Resources
+## References
 
 - [Official Unsplash documentation](https://unsplash.com/documentation)
+
+Issues
+
+- <https://github.com/OpenAPITools/openapi-generator/issues/9060>
+- <https://github.com/OpenAPITools/openapi-generator/issues/11191>
 
 ## License
 

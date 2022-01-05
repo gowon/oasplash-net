@@ -1,0 +1,11 @@
+# To learn more about .editorconfig see https://aka.ms/editorconfigdocs
+###############################
+# Core EditorConfig Options   #
+###############################
+root = true
+# All files
+[*]
+indent_style = space
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2
